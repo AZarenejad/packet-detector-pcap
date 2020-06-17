@@ -3,8 +3,8 @@
 
 
 
-TEST(pcapReader, test1){
-  ASSERT_EQ(1,1);
+TEST(pcapDetector, test1){
+  
 }
 
 int main(int argc, char  *argv[])
