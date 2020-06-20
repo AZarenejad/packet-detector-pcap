@@ -159,6 +159,8 @@ google/protobuf/io/zero_copy_stream_impl.h
 -
 fcntl.h
 -
+fstream
+-
 headers/EthernetHeader.h
 /home/alireza/UT/mahsan/packet-detector-pcap/headers/EthernetHeader.h
 headers/IPHeader.h

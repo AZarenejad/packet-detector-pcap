@@ -10,6 +10,7 @@
 #include <google/protobuf/text_format.h>
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 #include <fcntl.h>
+#include <fstream>
 #include "headers/EthernetHeader.h"
 #include "headers/IPHeader.h"
 #include "headers/TCPHeader.h"
@@ -45,7 +46,7 @@ int main(int argc , char * argv[]) {
         return 1;
     }
 
-    if (pcap_loop(handle,20, packetHandler, NULL) < 0) {
+    if (pcap_loop(handle,-1, packetHandler, NULL) < 0) {
       std::cout << "pcap_loop() failed: " << pcap_geterr(handle);
       return 1;
     }
@@ -66,6 +67,14 @@ void packetHandler(u_char *args, const struct pcap_pkthdr* header, const u_char*
     // EthernetHeader* ethernet_header = new EthernetHeader(packet);
 
 
+    // if(count==21){
+    //   std::ofstream ofs;
+    //   ofs.open( "../test/test_sip.txt", std::ios::app);
+    //   ofs.write( (char*)packet,1024);    
+    //   ofs.close();
+    //   abort();
+    // }
+   
     ethernet_header->print_mac_addr();
     
     if (ethernet_header->get_ethernet_type() == "IP")
