@@ -1,4 +1,4 @@
-#include "IPHeader.h"
+#include "headers/IPHeader.h"
 
 IPHeader::IPHeader(const u_char* start_header){
 	ip_header = std::make_shared<const IP> (*(reinterpret_cast<const IP*> (const_cast<u_char*> (start_header))));

@@ -10,13 +10,13 @@
 #include <google/protobuf/text_format.h>
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 #include <fcntl.h>
-#include "EthernetHeader.h"
-#include "IPHeader.h"
-#include "TCPHeader.h"
-#include "UDPHeader.h"
+#include "headers/EthernetHeader.h"
+#include "headers/IPHeader.h"
+#include "headers/TCPHeader.h"
+#include "headers/UDPHeader.h"
 #include "./protobuf/config.pb.h"
 #include "./protobuf/config.pb.cc"
-#include "SipHeader.h"
+#include "headers/SipHeader.h"
 
 
 
@@ -94,10 +94,7 @@ void packetHandler(u_char *args, const struct pcap_pkthdr* header, const u_char*
         }
 	
       }
-      else
-      {
     
-      }
   
     }
     

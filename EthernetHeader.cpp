@@ -1,4 +1,4 @@
-#include "EthernetHeader.h"
+#include "headers/EthernetHeader.h"
 
 EthernetHeader::EthernetHeader(const u_char* start_header){
 

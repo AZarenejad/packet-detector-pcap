@@ -53,10 +53,28 @@ google/protobuf/unknown_field_set.h
 -
 
 /home/alireza/UT/mahsan/packet-detector-pcap/EthernetHeader.cpp
-EthernetHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/EthernetHeader.h
+headers/EthernetHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/EthernetHeader.h
 
-/home/alireza/UT/mahsan/packet-detector-pcap/EthernetHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/IPHeader.cpp
+headers/IPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/IPHeader.h
+
+/home/alireza/UT/mahsan/packet-detector-pcap/SipHeader.cpp
+headers/SipHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/SipHeader.h
+
+/home/alireza/UT/mahsan/packet-detector-pcap/TCPHeader.cpp
+headers/TCPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/TCPHeader.h
+
+/home/alireza/UT/mahsan/packet-detector-pcap/UDPHeader.cpp
+headers/UDPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/UDPHeader.h
+headers/SipHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/SipHeader.h
+
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/EthernetHeader.h
 string
 -
 memory
@@ -74,11 +92,7 @@ sstream
 iomanip
 -
 
-/home/alireza/UT/mahsan/packet-detector-pcap/IPHeader.cpp
-IPHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/IPHeader.h
-
-/home/alireza/UT/mahsan/packet-detector-pcap/IPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/IPHeader.h
 string
 -
 memory
@@ -92,11 +106,7 @@ arpa/inet.h
 iostream
 -
 
-/home/alireza/UT/mahsan/packet-detector-pcap/SipHeader.cpp
-SipHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/SipHeader.h
-
-/home/alireza/UT/mahsan/packet-detector-pcap/SipHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/SipHeader.h
 sstream
 -
 iostream
@@ -104,11 +114,7 @@ iostream
 string
 -
 
-/home/alireza/UT/mahsan/packet-detector-pcap/TCPHeader.cpp
-TCPHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/TCPHeader.h
-
-/home/alireza/UT/mahsan/packet-detector-pcap/TCPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/TCPHeader.h
 netinet/tcp.h
 -
 iostream
@@ -118,13 +124,7 @@ memory
 arpa/inet.h
 -
 
-/home/alireza/UT/mahsan/packet-detector-pcap/UDPHeader.cpp
-UDPHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/UDPHeader.h
-SipHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/SipHeader.h
-
-/home/alireza/UT/mahsan/packet-detector-pcap/UDPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/UDPHeader.h
 netinet/udp.h
 -
 iostream
@@ -159,18 +159,18 @@ google/protobuf/io/zero_copy_stream_impl.h
 -
 fcntl.h
 -
-EthernetHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/EthernetHeader.h
-IPHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/IPHeader.h
-TCPHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/TCPHeader.h
-UDPHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/UDPHeader.h
+headers/EthernetHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/EthernetHeader.h
+headers/IPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/IPHeader.h
+headers/TCPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/TCPHeader.h
+headers/UDPHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/UDPHeader.h
 ./protobuf/config.pb.h
 /home/alireza/UT/mahsan/packet-detector-pcap/./protobuf/config.pb.h
 ./protobuf/config.pb.cc
 /home/alireza/UT/mahsan/packet-detector-pcap/./protobuf/config.pb.cc
-SipHeader.h
-/home/alireza/UT/mahsan/packet-detector-pcap/SipHeader.h
+headers/SipHeader.h
+/home/alireza/UT/mahsan/packet-detector-pcap/headers/SipHeader.h
 
