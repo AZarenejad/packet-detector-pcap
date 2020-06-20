@@ -1,4 +1,5 @@
 #include "UDPHeader.h"
+#include "SipHeader.h"
 
 UDPHeader::UDPHeader(const u_char* start_header){
 
@@ -6,6 +7,7 @@ UDPHeader::UDPHeader(const u_char* start_header){
 
 	src_port = ntohs((udp_header.get())->source);
 	dst_port = ntohs((udp_header.get())->dest);
+	size = static_cast<int> (ntohs((udp_header.get())->uh_ulen));
 
 }
 

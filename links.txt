@@ -1,0 +1,14 @@
+
+
+https://www.tutorialspoint.com/session_initiation_protocol/session_initiation_protocol_introduction.htm
+https://tools.ietf.org/html/rfc3261   //sip
+https://tools.ietf.org/html/rfc2327   //sdp
+https://tools.ietf.org/html/rfc3264   //An Offer/Answer Model with the Session Description Protocol (SDP)
+https://support.yeastar.com/hc/en-us/articles/360007606533-How-to-Analyze-SIP-Calls-in-Wireshark
+
+
+https://www.gnu.org/software/osip/
+
+
+
+http://ftp.gnu.org/gnu/osip/

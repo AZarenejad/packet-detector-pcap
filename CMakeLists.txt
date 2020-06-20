@@ -14,7 +14,7 @@ INCLUDE_DIRECTORIES(${PROTOBUF_INCLUDE_DIR})
 PROTOBUF_GENERATE_CPP(PROTO_SRC PROTO_HEADER ./protobuf/config.proto)
 ADD_LIBRARY(proto ${PROTO_HEADER} ${PROTO_SRC})
 
-add_executable(pcapDetector main.cpp  EthernetHeader.cpp  IPHeader.cpp  TCPHeader.cpp  UDPHeader.cpp)
+add_executable(pcapDetector main.cpp  EthernetHeader.cpp  IPHeader.cpp  TCPHeader.cpp  UDPHeader.cpp SipHeader.cpp)
 
 
 

@@ -20,6 +20,7 @@ public:
     inline u_int get_src_port(){return src_port;}
 	inline u_int get_dst_port(){return dst_port;}
     void print_udp_header()const;
+    int get_size(){return size;}
 
 
 	

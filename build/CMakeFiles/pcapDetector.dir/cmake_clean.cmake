@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pcapDetector.dir/IPHeader.cpp.o"
   "CMakeFiles/pcapDetector.dir/TCPHeader.cpp.o"
   "CMakeFiles/pcapDetector.dir/UDPHeader.cpp.o"
+  "CMakeFiles/pcapDetector.dir/SipHeader.cpp.o"
   "pcapDetector.pdb"
   "pcapDetector"
 )

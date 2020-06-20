@@ -190,6 +190,33 @@ IPHeader.cpp.s:
 	$(MAKE) -f CMakeFiles/pcapDetector.dir/build.make CMakeFiles/pcapDetector.dir/IPHeader.cpp.s
 .PHONY : IPHeader.cpp.s
 
+SipHeader.o: SipHeader.cpp.o
+
+.PHONY : SipHeader.o
+
+# target to build an object file
+SipHeader.cpp.o:
+	$(MAKE) -f CMakeFiles/pcapDetector.dir/build.make CMakeFiles/pcapDetector.dir/SipHeader.cpp.o
+.PHONY : SipHeader.cpp.o
+
+SipHeader.i: SipHeader.cpp.i
+
+.PHONY : SipHeader.i
+
+# target to preprocess a source file
+SipHeader.cpp.i:
+	$(MAKE) -f CMakeFiles/pcapDetector.dir/build.make CMakeFiles/pcapDetector.dir/SipHeader.cpp.i
+.PHONY : SipHeader.cpp.i
+
+SipHeader.s: SipHeader.cpp.s
+
+.PHONY : SipHeader.s
+
+# target to generate assembly for a file
+SipHeader.cpp.s:
+	$(MAKE) -f CMakeFiles/pcapDetector.dir/build.make CMakeFiles/pcapDetector.dir/SipHeader.cpp.s
+.PHONY : SipHeader.cpp.s
+
 TCPHeader.o: TCPHeader.cpp.o
 
 .PHONY : TCPHeader.o
@@ -314,6 +341,9 @@ help:
 	@echo "... IPHeader.o"
 	@echo "... IPHeader.i"
 	@echo "... IPHeader.s"
+	@echo "... SipHeader.o"
+	@echo "... SipHeader.i"
+	@echo "... SipHeader.s"
 	@echo "... TCPHeader.o"
 	@echo "... TCPHeader.i"
 	@echo "... TCPHeader.s"

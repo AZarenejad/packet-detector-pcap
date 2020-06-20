@@ -16,6 +16,7 @@
 #include "UDPHeader.h"
 #include "./protobuf/config.pb.h"
 #include "./protobuf/config.pb.cc"
+#include "SipHeader.h"
 
 
 
@@ -44,7 +45,7 @@ int main(int argc , char * argv[]) {
         return 1;
     }
 
-    if (pcap_loop(handle, -1, packetHandler, NULL) < 0) {
+    if (pcap_loop(handle,20, packetHandler, NULL) < 0) {
       std::cout << "pcap_loop() failed: " << pcap_geterr(handle);
       return 1;
     }
@@ -60,7 +61,6 @@ void packetHandler(u_char *args, const struct pcap_pkthdr* header, const u_char*
     static int count = 1; 
     std::cout << "\nPacket number "<< count << std::endl;
     count++;
-    
 
     std::unique_ptr<EthernetHeader> ethernet_header(new EthernetHeader(packet));
     // EthernetHeader* ethernet_header = new EthernetHeader(packet);
@@ -84,11 +84,19 @@ void packetHandler(u_char *args, const struct pcap_pkthdr* header, const u_char*
         std::unique_ptr<UDPHeader> udp_header(new UDPHeader(packet + sizeof(struct ether_header) + ip_header->get_ip_header_size()));
       
         udp_header->print_udp_header();
-      
+        Sip* sip_header = new Sip(packet + sizeof(struct ether_header) + ip_header->get_ip_header_size() + 8 ,
+        udp_header->get_size()-8);
+
+	      if (sip_header->packetIsSip()){
+		      std::cout << "***********************" << std::endl;
+		      sip_header->print_info();
+		      std::cout << "***********************" << std::endl;
+        }
+	
       }
       else
       {
-        /* code */
+    
       }
   
     }
