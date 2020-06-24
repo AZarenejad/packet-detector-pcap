@@ -1,11 +1,12 @@
 #ifndef IP_HEADER_H
 #define IP_HEADER_H
 
-#include <string>
-#include <memory>
 #include <netinet/ip.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+
+#include <string>
+#include <memory>
 #include <iostream>
 
 typedef struct ip IP;
@@ -25,8 +26,6 @@ public:
 	inline std::string get_ip_protocol(){return ip_protocol;}
 	inline int get_ip_header_size(){return size;}
 	void print_ip_addresss();
-
-	
 };
 
 #endif

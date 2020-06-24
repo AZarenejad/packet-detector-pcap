@@ -2,9 +2,10 @@
 #define UDP_HEADER_H
 
 #include <netinet/udp.h>
+#include <arpa/inet.h>
+
 #include <iostream>
 #include <memory>
-#include <arpa/inet.h>
 
 typedef struct udphdr UDPHR; 
 
@@ -20,10 +21,7 @@ public:
     inline u_int get_src_port(){return src_port;}
 	inline u_int get_dst_port(){return dst_port;}
     void print_udp_header()const;
-    int get_size(){return size;}
-
-
-	
+    int get_size(){return size;}	
 };
 
 #endif

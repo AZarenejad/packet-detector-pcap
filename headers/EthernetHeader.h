@@ -1,14 +1,15 @@
 #ifndef ETHERNET_HEADER_H
 #define ETHERNET_HEADER_H
 
-#include <string>
-#include <memory>
 #include <netinet/if_ether.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+
+#include <string>
+#include <memory>
+#include <iomanip>
 #include <iostream>
 #include <sstream> 
-#include <iomanip> 
 
 typedef struct ether_header ETHHR;
 
@@ -28,11 +29,8 @@ public:
 	void set_mac_src_addr();
 	void set_mac_dst_addr();
 	void print_mac_addr() const;
-	
-
-	
 };
 
-std::string convertIntToString(int num);
+std::string convert_int_to_string(int num);
 
 #endif

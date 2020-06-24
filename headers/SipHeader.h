@@ -5,9 +5,7 @@
 #include <iostream>
 #include <string>
 
-
 typedef struct osip_message SIPHDR;
-
 
 class Sip 
 {
@@ -26,7 +24,6 @@ public:
     std::string get_to() const;
     void print_info() const;
     bool packetIsSip();
-
 };
 
 #endif
